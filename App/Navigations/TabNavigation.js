@@ -8,6 +8,7 @@ import ProfileScreen from '../Screen/ProfileScreen';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import HomeScreenNavigation from './HomeScreenNavigation';
+import UploadPage from '../Screen/UploadPage';
 
 const Tab=createBottomTabNavigator();
 export default function TabNavigation() {
@@ -26,6 +27,12 @@ export default function TabNavigation() {
      options={{
         tabBarIcon:({color,size})=>(
             <Ionicons name="book" size={size} color={color} />
+        )
+    }}/>
+    <Tab.Screen name='Upload' component={UploadPage} 
+     options={{
+        tabBarIcon:({color,size})=>(
+            <Ionicons name="cloud-upload-sharp" size={size} color={color} />
         )
     }}/>
     <Tab.Screen name='leaderboard' 

@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.malikobansa.studypod"
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +38,14 @@
     },
     "updates": {
       "url": "https://u.expo.dev/0f0d6580-a0d3-4411-91e9-cd5b91a91fad"
-    }
+    },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ]
   }
 }

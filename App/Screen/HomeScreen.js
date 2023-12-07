@@ -44,6 +44,8 @@ export default function HomeScreen() {
         <CourseList level={'Basic'} />
         </View>
         <CourseList level={'Advance'} />
+        <CourseList level={'Moderate'} />
+        <CourseList level={'PDFs'} />
       </View>
     </ScrollView>
   )
