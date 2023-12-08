@@ -16,17 +16,17 @@ export default function TabNavigation() {
    <Tab.Navigator screenOptions={{
     headerShown:false
    }}>
-    <Tab.Screen name='home' component={HomeScreenNavigation} 
+    <Tab.Screen name='Home' component={HomeScreenNavigation} 
     options={{
         tabBarIcon:({color,size})=>(
-            <Ionicons name="Home" size={size} color={color} />
+            <Ionicons name="home" size={size} color={color} />
         )
     }}
     />
-    <Tab.Screen name='my-course' component={MyCourse} 
+    <Tab.Screen name='My Courses' component={MyCourse} 
      options={{
         tabBarIcon:({color,size})=>(
-            <Ionicons name="Book" size={size} color={color} />
+            <Ionicons name="book" size={size} color={color} />
         )
     }}/>
     <Tab.Screen name='Upload' component={UploadPage} 
