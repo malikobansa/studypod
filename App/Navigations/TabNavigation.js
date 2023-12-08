@@ -19,14 +19,14 @@ export default function TabNavigation() {
     <Tab.Screen name='home' component={HomeScreenNavigation} 
     options={{
         tabBarIcon:({color,size})=>(
-            <Ionicons name="home" size={size} color={color} />
+            <Ionicons name="Home" size={size} color={color} />
         )
     }}
     />
     <Tab.Screen name='my-course' component={MyCourse} 
      options={{
         tabBarIcon:({color,size})=>(
-            <Ionicons name="book" size={size} color={color} />
+            <Ionicons name="Book" size={size} color={color} />
         )
     }}/>
     <Tab.Screen name='Upload' component={UploadPage} 
@@ -35,14 +35,14 @@ export default function TabNavigation() {
             <Ionicons name="cloud-upload-sharp" size={size} color={color} />
         )
     }}/>
-    <Tab.Screen name='leaderboard' 
+    <Tab.Screen name='Leaderboard' 
     component={LeaderBoard} 
     options={{
         tabBarIcon:({color,size})=>(
             <MaterialIcons name="leaderboard" size={size} color={color} />
         )
     }}/>
-    <Tab.Screen name='profile' 
+    <Tab.Screen name='Profile' 
     component={ProfileScreen} 
     options={{
         tabBarIcon:({color,size})=>(
